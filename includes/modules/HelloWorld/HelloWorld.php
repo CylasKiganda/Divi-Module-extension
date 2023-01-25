@@ -12,7 +12,7 @@ class MYEX_HelloWorld extends ET_Builder_Module {
 	);
 
 	public function init() {
-		$this->name = esc_html__( 'Hello World', 'myex-my-extension' );
+		$this->name = esc_html__( 'Belo Hello World', 'myex-my-extension' );
 	}
 
 	public function get_fields() {
@@ -28,7 +28,7 @@ class MYEX_HelloWorld extends ET_Builder_Module {
 	}
 
 	public function render( $attrs, $content = null, $render_slug ) {
-		return sprintf( '<h1>%1$s</h1>', $this->props['content'] );
+		return sprintf( '<h1 style="font-weight:bolder;">%1$s</h1>', $this->props['content'] );
 	}
 }
 
