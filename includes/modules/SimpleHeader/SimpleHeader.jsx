@@ -13,8 +13,8 @@ class HelloWorld extends Component {
     const Content = this.props.content;
 
     return (
-      <h1>
-        <Content/>
+      <h1 className='beloking'>
+        {{Content}}
       </h1>
     );
   }
